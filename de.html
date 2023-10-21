@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stadt Land Fluss - Buchstabengenerator</title>
+    <meta charset="utf-8">
+    <meta author="Bünyamin Eskiocak">
+    <meta keywords="Stadt,Land,Fluss,Buchstaben,Generator,Buchstabengenerator">
+    <meta description="Stadt Land Fluss Buchstabengenerator">
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        media="(prefers-color-scheme:light)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/themes/light.css"
+    >
+    <link
+        rel="stylesheet"
+        media="(prefers-color-scheme:dark)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/themes/dark.css"
+        onload="document.documentElement.classList.add('sl-theme-dark');"
+    >
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/shoelace-autoloader.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <sl-button href="index.html">
+        <sl-icon name="translate"></sl-icon>
+        EN - Categories word game
+    </sl-button>
+    <h1>Stadt Land Fluss - Buchstabengenerator</h1>
+    <sl-button onclick="generateLetter()" variant="primary" id="generate">
+        <sl-icon name="arrow-right"></sl-icon>
+        Buchstaben generieren
+    </sl-button>
+    <sl-button onclick="resetLetters()" variant="danger">
+        <sl-icon name="arrow-clockwise"></sl-icon>
+        Buchstaben zurücksetzen
+    </sl-button>
+    <p id="current-letter" class="hidden">Buchstabe: <span></span></p>
+    <p id="used-letters" class="hidden">Kam schon: <span></span></p>
+</body>
+</html>

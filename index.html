@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Categories word game - letter generator</title>
+    <meta charset="utf-8">
+    <meta author="Bünyamin Eskiocak">
+    <meta keywords="categories,word,game,letter,generator">
+    <meta description="Categories word game - letter generator">
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        media="(prefers-color-scheme:light)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/themes/light.css"
+    >
+    <link
+        rel="stylesheet"
+        media="(prefers-color-scheme:dark)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/themes/dark.css"
+        onload="document.documentElement.classList.add('sl-theme-dark');"
+    >
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.10.0/cdn/shoelace-autoloader.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <sl-button href="de.html">
+        <sl-icon name="translate"></sl-icon>
+        DE - Stadt Land Fluss
+    </sl-button>
+    <h1>Categories word game - letter generator</h1>
+    <sl-button onclick="generateLetter()" variant="primary" id="generate">
+        <sl-icon name="arrow-right"></sl-icon>
+        Generate letter
+    </sl-button>
+    <sl-button onclick="resetLetters()" variant="danger">
+        <sl-icon name="arrow-clockwise"></sl-icon>
+        Reset letters
+    </sl-button>
+    <p id="current-letter" class="hidden">Letter: <span></span></p>
+    <p id="used-letters" class="hidden">Came already: <span></span></p>
+</body>
+</html>
